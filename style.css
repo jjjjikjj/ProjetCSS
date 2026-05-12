@@ -1,0 +1,98 @@
+/* Réinitialisation */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    /* Dégradé aux couleurs du Sénégal : Vert, Jaune, Rouge */
+    background: linear-gradient(135deg, #00853f 0%, #fdef42 50%, #e31b23 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fdef42; /* Texte Jaune */
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #00853f; /* Bordure Verte */
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border-left: 10px solid #e31b23; /* Rappel du Rouge */
+}
+
+h2 {
+    color: #00853f; /* Titres en Vert */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Ajout d'une petite étoile avant les titres */
+h2::before {
+    content: "★";
+    color: #00853f;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #fdef42;
+    outline: none;
+    box-shadow: 0 0 5px rgba(253, 239, 66, 0.5);
+}
+
+button {
+    background-color: #00853f; /* Bouton Vert */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e31b23; /* Devient Rouge au survol */
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
